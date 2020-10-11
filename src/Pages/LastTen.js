@@ -1,5 +1,5 @@
 import React from 'react'
-import { Anchor, Image, Cardsli, Cardsh2, Cardsp, FlexDiv, Ulist } from './styles'
+import { Anchor, Image, Cardsli, Cardsh2, Cardsp, FlexDiv, Ulist } from './styles/styles'
 
 export const LastTen = ({ links, path, name, date_utc }) => (
   <>

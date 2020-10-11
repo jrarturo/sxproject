@@ -1,20 +1,20 @@
 import React from 'react'
-import { LastTen } from '../../Pages/LastTen'
+import { NextTen } from '../../Pages/NextTen'
 import { List, Item } from './styles'
 import { Loader } from '../Loader'
 import { useFetchData } from '../hooks/useFetchData'
 
-function useLastTenData () {
-  const { data, loading } = useFetchData('https://api.spacexdata.com/v4/launches/past')
+function useNextTenData () {
+  const { data, loading } = useFetchData('https://api.spacexdata.com/v4/launches/upcoming')
   return { data, loading }
 }
 
-export const ListOfLastTen = () => {
-  const { data, loading } = useLastTenData()
+export const ListOfNextTen = () => {
+  const { data, loading } = useNextTenData()
   const renderList = () => (
     <List>
       {
-        data.slice(-10).map(lastten => <Item key={lastten.links}><LastTen {...lastten} /></Item>)
+        data.slice(-10).map(nextten => <Item key={nextten.id}><NextTen {...nextten} /></Item>)
       }
     </List>
   )

@@ -4,6 +4,10 @@ export const GlobalStyle = createGlobalStyle`
   html {
                 box-sizing: border-box;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 50%;
+                list-style: none;
+                display: flex;
+                text-align: center;
         }
         
         *, *::before, *::after {
@@ -26,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         body {
-                background: #fefefe;
+                background: linear-gradient(35deg, hsla(210, 29%, 24%, 1), hsla(204, 70%, 53%, 1) 100%);
                 height: 100vh;
                 margin: 0 auto;
                 max-width: 1000px;
