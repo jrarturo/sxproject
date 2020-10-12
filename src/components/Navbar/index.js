@@ -5,11 +5,11 @@ export const Navbar = () => {
   return (
     <Section>
       <Container>
-        <Btn type='button'>Past Launches</Btn>
-        <Btn type='button' buynow>
+        <Btn to='/lasten' type='button'>Past Launches</Btn>
+        <Btn to='/nexten' type='button' buynow='true'>
           Next Launches
         </Btn>
-        <SignInBtn as='a' href='#0'>
+        <SignInBtn as='a' to='/date'>
           Search by Date
         </SignInBtn>
       </Container>

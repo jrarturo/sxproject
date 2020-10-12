@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
 import { LatestLaunch } from '../components/LatestLaunch'
+import { Navbar } from '../components/Navbar'
 
 export const Home = () => {
   return (

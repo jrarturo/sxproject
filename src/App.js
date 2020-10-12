@@ -3,17 +3,21 @@ import { GlobalStyle } from './GlobalStyle'
 import { Home } from './Pages/Home'
 import { Logo } from './components/Logo'
 import { Router } from '@reach/router'
-import { LastTen } from './Pages/LastTen'
-import { NextTen } from './Pages/NextTen'
+import { ListOfLastTen } from './components/ListOfLastTen'
+import { ListOfNextTen } from './components/ListNextTen'
+// import SearchByDate from './components/SearchByDate'
 
 export const App = () => (
   <>
     <GlobalStyle />
     <Logo />
-    <Router>
-      <Home path='/' />
-      <LastTen path='/' />
-      <NextTen path='/' />
-    </Router>
+    <div>
+      <Router>
+        <Home path='/' />
+        <ListOfLastTen path='/lasten' />
+        <ListOfNextTen path='/nexten' />
+        {/* <SearchByDate path='/date' /> */}
+      </Router>
+    </div>
   </>
 )

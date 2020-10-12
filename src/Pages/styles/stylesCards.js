@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from '@reach/router'
 
 export const Anchor = styled.a`
   display: flex;
@@ -25,14 +24,14 @@ export const Cardsli = styled.li`
   border-radius:5px;
   background-color: #757575;
   color: #FCFCFC;
-  flex: 1 1 200px;
+  flex: 1 1 100px;
   list-style: none;
 `
 export const Cardsh2 = styled.h2`
   background-color: #26547C;
   margin: 0;
   padding: 10px;
-  font-size: 5rem;
+  font-size: 3rem;
 `
 export const Cardsp = styled.p`
   padding: 10px;
@@ -115,7 +114,7 @@ export const Container = styled.div`
  }
 `
 
-export const Btn = styled(Link)`
+export const Btn = styled.button`
  background-color: ${({ buynow }) =>
   buynow ? 'hsla(40, 72%, 50%, 1)' : 'hsla(347, 49%, 46%, 1)'};
  border: 1px solid
@@ -132,8 +131,6 @@ export const Btn = styled(Link)`
  padding: 1.5rem 2rem;
  margin: 1rem;
  transition: all 0.1s ease-in;
- text-decoration: none;
-
 
  ::-moz-focus-inner {
   border: 0;

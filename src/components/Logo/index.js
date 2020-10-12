@@ -1,9 +1,10 @@
 import * as React from 'react'
+import { Link } from '@reach/router'
 import { Svg } from './styles'
 
 export const Logo = props => {
   return (
-    <div>
+    <Link to='/'>
       <Svg
         width={749.767}
         height={120.81}
@@ -16,7 +17,7 @@ export const Logo = props => {
       >
         <defs>
           <filter id='prefix__editing-vr'>
-            <feFlood floodColor='red' floodOpacity={0.7} result='c1' />
+            <feFlood floodColor='white' floodOpacity={0.7} result='c1' />
             <feFlood floodColor='#00f' floodOpacity={0.7} result='c3' />
             <feComposite
               operator='in'
@@ -49,6 +50,6 @@ export const Logo = props => {
         </g>
         <style />
       </Svg>
-    </div>
+    </Link>
   )
 }

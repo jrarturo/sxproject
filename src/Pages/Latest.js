@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, Anchor, Image, Cardsli, Cardsh2, Cardsp, FlexDiv, Ulist } from './styles/styles'
+import { Title, Anchor, Image, Cardsli, Cardsh2, Cardsp, FlexDiv, Ulist } from './styles/stylesCards'
 import Moment from 'react-moment'
 
 export const Latest = ({ links, name, path, date_utc, details }) => (

@@ -3,7 +3,7 @@ import axios from 'axios'
 import DatePicker from 'react-datepicker'
 
 
-export class Searchdata extends Component {
+export class SearchByDate extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -95,4 +95,4 @@ enddate = (e) => {
         )
     }
 }  
-export default Searchdata
+export default SearchByDate

@@ -1,6 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true
+  },
   devtool: 'inline-source-map',
   output: {
     filename: 'app.bundle.js',
