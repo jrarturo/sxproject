@@ -9,7 +9,7 @@ export const Navbar = () => {
         <Btn to='/nexten' type='button' buynow='true'>
           Next Launches
         </Btn>
-        <SignInBtn as='a' to='/date'>
+        <SignInBtn to='/date'>
           Search by Date
         </SignInBtn>
       </Container>

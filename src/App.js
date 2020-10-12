@@ -5,7 +5,8 @@ import { Logo } from './components/Logo'
 import { Router } from '@reach/router'
 import { ListOfLastTen } from './components/ListOfLastTen'
 import { ListOfNextTen } from './components/ListNextTen'
-// import SearchByDate from './components/SearchByDate'
+import { NotFound } from './Pages/NotFound'
+import { SearchByDate } from './components/SearchByDate'
 
 export const App = () => (
   <>
@@ -16,7 +17,8 @@ export const App = () => (
         <Home path='/' />
         <ListOfLastTen path='/lasten' />
         <ListOfNextTen path='/nexten' />
-        {/* <SearchByDate path='/date' /> */}
+        <SearchByDate path='/date' />
+        <NotFound default />
       </Router>
     </div>
   </>

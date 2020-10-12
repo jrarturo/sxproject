@@ -77,13 +77,16 @@ export const Background = styled.div`
     min-height: 100vh;
     min-width: 100vw;
     color: rgba(255,255,255,.87);
+    padding-top: 100px;
 `
 export const NotFoundText = styled.div`
     display: flex;
-    flex-direction: column;
+    padding-top: 500px;
+    align-self: center;
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-top: -50px
 `
 export const Section = styled.section`
  height: 10vh;
@@ -133,6 +136,11 @@ export const Btn = styled(Link)`
  margin: 1rem;
  transition: all 0.1s ease-in;
  text-decoration: none;
+
+ &&[aria-current] {
+   color: rgba(0, 0, 0, 0.8);
+
+ }
 
 
  ::-moz-focus-inner {
