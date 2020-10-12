@@ -1,6 +1,6 @@
 ![SpaceX](https://svgshare.com/i/QGM.svg)
 
-##Vercel Preview on [Vercel.com](https://sxproject.jrarturo.vercel.app/).
+## Vercel Preview on [Vercel.com](https://sxproject.jrarturo.vercel.app/).
 
 ## Available Scripts
 
